@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/assets/images/logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img onclick="closemenu()" class="menu_icon" src="/assets/images/cross_icon.png" alt="">
+                </ul>
+                <img onclick="openmenu()" class="menu_icon" src="/assets/images/menu_icon.png" alt="">
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Rafiul</span><br>From Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------about-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/assets/images/user.jpg" alt="Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there!👋Md. Rafiul. I am a Frontend Developer(ReactJS). My goal is always to make a website
+                        that looks good. I'm always on the lookout for cutting-edge technology. I am very interested in
+                        the field of user interfaces. That's why I've trained myself to respond to javascript. At
+                        January, I began studying React, and ever since then, I've loved putting it to use on websites
+                        thanks to its speed, scalability, and ease of use.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Student</li>
+                            <li><span>Learning</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>BSC in CSE</li>
+                            <li><span>2020</span><br>HSC</li>
+                            <li><span>2018</span><br>SSC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------services-------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <img src="/assets/images/code_icon.svg" alt="" srcset="">
+                    <h2>Web Design</h2>
+                    <p>Want to get beautiful website this is the right place.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <img src="/assets/images/crop_icon.svg" alt="" srcset="">
+                    <h2>UI/UX Design</h2>
+                    <p>Want to get beautiful website this is the right place.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <img src="/assets/images/app_android.svg" alt="" srcset="">
+                    <h2>App Design</h2>
+                    <p>Want to get beautiful website this is the right place.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------portfolio------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/assets/images/work-1.png" alt="" srcset="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            The app connects you to the people around the world. Download it from play store.
+                        </p>
+                        <a href="#">Click</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>
+                            The app connects you to the people around the world. Download it from play store.
+                        </p>
+                        <a href="#">Click</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/assets/images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Android App</h3>
+                        <p>
+                            The app connects you to the people around the world. Download it from play store.
+                        </p>
+                        <a href="#">Click</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -----------------------------------contact---------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>rafiul13062001@gmail.com</p>
+                    <p>01407737666</p>
+                    <div class="social-icons">
+                        <a href="#"><img src="/assets/images/facebook_icon.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/twiter_icon.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/instagram_icon.png" alt=""></a>
+                        <a href="#"><img src="/assets/images/linkdin_icon.png" alt=""></a>
+                    </div>
+                    <a class="btn btn2" href="#">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy 2023</p>
+    </div>
+</body>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</html>
